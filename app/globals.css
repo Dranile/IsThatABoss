@@ -132,12 +132,16 @@ input[type="text"]:focus {
   overflow: hidden;
   background: #020617;
   border: 1px solid rgba(148, 163, 184, 0.16);
+  max-width: 400px;
+  margin: 0 auto;
 }
 
 .imageWrapper img {
   width: 100%;
   height: auto;
   display: block;
+  max-height: 300px;
+  object-fit: contain;
 }
 
 .questionText {
