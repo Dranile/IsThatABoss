@@ -59,6 +59,14 @@ input {
   color: #cbd5e1;
 }
 
+.headerImage {
+  max-width: 100%;
+  height: auto;
+  margin: 1rem auto 0;
+  display: block;
+  border-radius: 12px;
+}
+
 .intro,
 .quiz,
 .result {
@@ -132,13 +140,9 @@ input[type="text"]:focus {
   display: block;
 }
 
-.questionText,
-.hintText {
+.questionText {
   margin: 0;
   color: #cbd5e1;
-}
-
-.questionText {
   font-size: 1.15rem;
   font-weight: 600;
 }
@@ -157,10 +161,6 @@ input[type="text"]:focus {
 
 .answerButton.boss {
   background: linear-gradient(135deg, #ef4444, #f97316);
-}
-
-.hintText {
-  color: #94a3b8;
 }
 
 .feedbackCard {

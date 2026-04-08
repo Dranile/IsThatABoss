@@ -77,6 +77,7 @@ export default function Home() {
         <header className="header">
           <h1>Est-ce un Boss ?</h1>
           <p className="subtitle">Devine si la personne sur l'image est un boss ou non.</p>
+          {!started && <img src="https://miro.medium.com/1*-SoJy52kgGuN9Fj9jmIb0Q.png" alt="Illustration du jeu" className="headerImage" />}
         </header>
 
         {!started ? (
@@ -164,9 +165,7 @@ export default function Home() {
                   {currentIndex + 1 >= totalQuestions ? "Voir le résultat" : "Question suivante"}
                 </button>
               </div>
-            ) : (
-              <p className="hintText">Indice : {currentImage.hint}</p>
-            )}
+            ) : null}
           </section>
         )}
       </div>
